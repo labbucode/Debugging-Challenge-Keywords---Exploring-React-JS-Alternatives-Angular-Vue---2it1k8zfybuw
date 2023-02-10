@@ -6,10 +6,11 @@ const App = () => {
   let [count, setCount] = useState(0)
 
   return (
-    <div >
-      <h1 ondoubleclick={() => { alert("cant edit it") }}>{count}</h1>
-      <button onclick={() => { setCount(count + 1) }}>Increment</button>
-    </div>
+     <div className="ball">
+      <h1 className="count" ondoubleclick={() => { alert("cant edit it") }}>{count}</h1>
+      <button class='increment-button' onClick={() => { setCount(count + 1) }}>Increment</button>
+     </div>
+  
   )
 }
 
